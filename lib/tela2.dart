@@ -9,11 +9,12 @@ class Tela2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(100),
         child: AppBar(
-          automaticallyImplyLeading: false,
-          flexibleSpace: Stack(
+          automaticallyImplyLeading: false,  // tira a setinha de voltar
+          flexibleSpace: Stack(  // permite personalizar a appBar
             children: [
 
               Container(
@@ -105,6 +106,7 @@ class Tela2 extends StatelessWidget {
         child: Center(
           child: Column(
             children: [
+              
               SizedBox(height: 100),
                 
               // Pix
@@ -124,7 +126,7 @@ class Tela2 extends StatelessWidget {
                 ),
                 child: Stack(
                   alignment: Alignment.center,
-                  clipBehavior: Clip.none,
+                  clipBehavior: Clip.none,  // não corta o que sair para fora
                   children: [
 
                     Image.asset(

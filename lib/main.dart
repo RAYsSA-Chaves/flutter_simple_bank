@@ -28,6 +28,7 @@ class Tela1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
         backgroundColor: const Color(0xFF0F7A4D),
       ),
@@ -35,7 +36,7 @@ class Tela1 extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -46,16 +47,15 @@ class Tela1 extends StatelessWidget {
           )
         ),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image.asset(
               "../images/pig.png",
               width: 260,
             ),
 
-            const SizedBox(height: 80),
+            Spacer(),
 
-            const Text(
+            Text(
               "My Simple Bank App",
               style: TextStyle(
                 color: Colors.white,
@@ -64,7 +64,7 @@ class Tela1 extends StatelessWidget {
               ),
             ),
 
-            const Spacer(),
+            Spacer(),
 
             TextButton(
               style: TextButton.styleFrom(
