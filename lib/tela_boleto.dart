@@ -36,7 +36,7 @@ class TelaBoleto extends StatelessWidget {
             Spacer(),
 
             Image.asset(
-              '../images/boleto.png',
+              'images/boleto.png',
               width: 260,
             ),
 

@@ -50,7 +50,7 @@ class Tela1 extends StatelessWidget {
         child: Column(
           children: [
             Image.asset(
-              '../images/pig.png',
+              'images/pig.png',
               width: 260,
             ),
 

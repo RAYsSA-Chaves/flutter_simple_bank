@@ -46,7 +46,7 @@ class Tela2 extends StatelessWidget {
                     Row(
                       children: [
                         Image.asset(
-                          '../images/user2.png',
+                          'images/user2.png',
                           width: 60,
                         ),
 
@@ -130,14 +130,14 @@ class Tela2 extends StatelessWidget {
                   children: [
 
                     Image.asset(
-                      '../images/trapezio.png',
+                      'images/trapezio.png',
                       width: 300,
                     ),
 
                     Positioned(
                       top: -60,
                       child: Image.asset(
-                        '../images/pix.png',
+                        'images/pix.png',
                         width: 200,
                       ),
                     ),
@@ -201,14 +201,14 @@ class Tela2 extends StatelessWidget {
                   children: [
 
                     Image.asset(
-                      '../images/trapezio.png',
+                      'images/trapezio.png',
                       width: 300,
                     ),
 
                     Positioned(
                       top: -80,
                       child: Image.asset(
-                        '../images/card.png',
+                        'images/card.png',
                         width: 230,
                         fit: BoxFit.cover,
                       ),
@@ -273,14 +273,14 @@ class Tela2 extends StatelessWidget {
                   children: [
 
                     Image.asset(
-                      '../images/trapezio.png',
+                      'images/trapezio.png',
                       width: 300,
                     ),
 
                     Positioned(
                       top: -50,
                       child: Image.asset(
-                        '../images/bill.png',
+                        'images/bill.png',
                         width: 180,
                       ),
                     ),

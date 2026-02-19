@@ -32,7 +32,7 @@ class TelaCartao extends StatelessWidget {
 
               Center(
                 child: Image.asset(
-                  '../images/card2.png',
+                  'images/card2.png',
                   width: 300,
                 ),
               ),
@@ -147,7 +147,7 @@ class TelaCartao extends StatelessWidget {
                 ],
               ),
 
-              SizedBox(height: 80),
+              SizedBox(height: 100),
 
               Text(
                 'Histórico',
@@ -165,7 +165,7 @@ class TelaCartao extends StatelessWidget {
                   Row(
                     children: [
                       Image.asset(
-                        '../images/pago.png',
+                        'images/pago.png',
                         width: 60,
                       ),
                       SizedBox(width: 15),
@@ -209,7 +209,7 @@ class TelaCartao extends StatelessWidget {
                   Row(
                     children: [
                       Image.asset(
-                        '../images/casas_bahia.png',
+                        'images/casas_bahia.png',
                         width: 60,
                       ),
                       SizedBox(width: 15),

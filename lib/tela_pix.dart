@@ -76,8 +76,8 @@ class TelaPix extends StatelessWidget {
 
               Row(
                 children: [
-                  Container(
-                      width: 280,
+                  Expanded(
+                    child: Container(
                       padding: const EdgeInsets.symmetric(
                         horizontal: 30,
                         vertical: 20,
@@ -111,7 +111,9 @@ class TelaPix extends StatelessWidget {
                                   fontWeight: FontWeight.bold
                                 ),
                               ),
+
                               SizedBox(width: 10,),
+
                               Expanded(
                                 child: TextField(
                                   style: TextStyle(color: Colors.white),
@@ -132,37 +134,37 @@ class TelaPix extends StatelessWidget {
                         ],
                       ),
                     ),
+                  ),
 
                   SizedBox(width: 20),
 
-                  Expanded(
-                    child: Container(
-                      height: 96,
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 30,
-                        vertical: 20
-                      ),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(40),
-                        color: const Color.fromARGB(107, 24, 130, 95)
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Seu saldo',
+                  Container(
+                    width: 200,
+                    height: 100,
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 30,
+                      vertical: 20
+                    ),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(40),
+                      color: const Color.fromARGB(107, 24, 130, 95)
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Seu saldo',
+                        ),
+                        SizedBox(height: 5,),                          
+                        Text(
+                          'R\$ 76,08',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w900,
+                            fontSize: 20
                           ),
-                          SizedBox(height: 5,),                          
-                          Text(
-                            'R\$ 76,08',
-                            style: TextStyle(
-                              fontWeight: FontWeight.w900,
-                              fontSize: 20
-                            ),
-                          ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                 ],
@@ -215,7 +217,7 @@ class TelaPix extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Image.asset(
-                          '../images/qr_code.png',
+                          'images/qr_code.png',
                           width: 250,
                         ),
                         Text(
