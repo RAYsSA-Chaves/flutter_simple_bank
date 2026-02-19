@@ -46,24 +46,24 @@ class Tela2 extends StatelessWidget {
                     Row(
                       children: [
                         Image.asset(
-                          "../images/user2.png",
+                          '../images/user2.png',
                           width: 60,
                         ),
 
-                        const SizedBox(width: 10),
+                       SizedBox(width: 10),
 
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
+                          children: [
                             Text(
-                              "Sua conta",
+                              'Sua conta',
                               style: TextStyle(
                                 color: Colors.white70,
                                 fontSize: 14,
                               ),
                             ),
                             Text(
-                              "Milena",
+                              'Milena',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 20,
@@ -86,7 +86,7 @@ class Tela2 extends StatelessWidget {
                       ),
 
                       child: Text(
-                        "R\$ 76,08",
+                        'R\$ 76,08',
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w600,
@@ -130,14 +130,14 @@ class Tela2 extends StatelessWidget {
                   children: [
 
                     Image.asset(
-                      "../images/trapezio.png",
+                      '../images/trapezio.png',
                       width: 300,
                     ),
 
                     Positioned(
                       top: -60,
                       child: Image.asset(
-                        "../images/pix.png",
+                        '../images/pix.png',
                         width: 200,
                       ),
                     ),
@@ -145,7 +145,7 @@ class Tela2 extends StatelessWidget {
                     Positioned(
                       bottom: 60,
                       child: Text(
-                        "Pix",
+                        'Pix',
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w600,
@@ -201,14 +201,14 @@ class Tela2 extends StatelessWidget {
                   children: [
 
                     Image.asset(
-                      "../images/trapezio.png",
+                      '../images/trapezio.png',
                       width: 300,
                     ),
 
                     Positioned(
                       top: -80,
                       child: Image.asset(
-                        "../images/card.png",
+                        '../images/card.png',
                         width: 230,
                         fit: BoxFit.cover,
                       ),
@@ -217,7 +217,7 @@ class Tela2 extends StatelessWidget {
                     Positioned(
                       bottom: 60,
                       child: Text(
-                        "Cartão",
+                        'Cartão',
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w600,
@@ -273,14 +273,14 @@ class Tela2 extends StatelessWidget {
                   children: [
 
                     Image.asset(
-                      "../images/trapezio.png",
+                      '../images/trapezio.png',
                       width: 300,
                     ),
 
                     Positioned(
                       top: -50,
                       child: Image.asset(
-                        "../images/bill.png",
+                        '../images/bill.png',
                         width: 180,
                       ),
                     ),
@@ -288,7 +288,7 @@ class Tela2 extends StatelessWidget {
                     Positioned(
                       bottom: 60,
                       child: Text(
-                        "Boleto",
+                        'Boleto',
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w600,

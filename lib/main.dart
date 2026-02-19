@@ -49,14 +49,14 @@ class Tela1 extends StatelessWidget {
         child: Column(
           children: [
             Image.asset(
-              "../images/pig.png",
+              '../images/pig.png',
               width: 260,
             ),
 
             Spacer(),
 
             Text(
-              "My Simple Bank App",
+              'My Simple Bank App',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 22,
@@ -86,7 +86,7 @@ class Tela1 extends StatelessWidget {
                 );
               },
               child: Text(
-                "Entrar",
+                'Entrar',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 18,

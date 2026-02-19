@@ -1,5 +1,3 @@
-import 'dart:collection';
-
 import 'package:flutter/material.dart';
 
 class TelaPix extends StatelessWidget {
@@ -8,9 +6,9 @@ class TelaPix extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
         backgroundColor: Colors.transparent, 
-        elevation: 0.0,
       ),
 
       body: SingleChildScrollView(
@@ -23,10 +21,10 @@ class TelaPix extends StatelessWidget {
               SizedBox(height: 20),
 
               Text(
-                "Fazer um pix",
+                'Fazer um pix',
                 style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w600,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
 
@@ -34,9 +32,8 @@ class TelaPix extends StatelessWidget {
 
               Container(
                 width: double.infinity,
-                height: 110,
                 padding: const EdgeInsets.symmetric(
-                        horizontal: 25,
+                        horizontal: 30,
                         vertical: 20,
                       ),
                 decoration: BoxDecoration(
@@ -54,14 +51,19 @@ class TelaPix extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Chave Pix",
+                      'Chave Pix',
                       style: TextStyle(color: Colors.white),
                     ),
                     TextField(
-                      style: TextStyle(color: Colors.white),
+                      cursorColor: Colors.white, 
+                      style: TextStyle(color: Colors.white,),
                       decoration: InputDecoration(
+                        isDense: true,  // retira espaçamentos padrão
                         labelText: '',
                         enabledBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        focusedBorder: UnderlineInputBorder( 
                           borderSide: BorderSide(color: Colors.white),
                         ),
                       ),
@@ -70,14 +72,14 @@ class TelaPix extends StatelessWidget {
                 ),
               ),
 
-              SizedBox(height: 40),
+              SizedBox(height: 60),
 
               Row(
                 children: [
                   Container(
-                      width: 250,
+                      width: 280,
                       padding: const EdgeInsets.symmetric(
-                        horizontal: 25,
+                        horizontal: 30,
                         vertical: 20,
                       ),
                       decoration: BoxDecoration(
@@ -95,27 +97,35 @@ class TelaPix extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Valor",
+                            'Valor',
                             style: TextStyle(color: Colors.white),
                           ),
+                          SizedBox(height: 10,),
                           Row(
                             children: [
                               Text(
-                                "R\$",
+                                'R\$',
                                 style: TextStyle(
                                   color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold
                                 ),
-                                ),
-                                SizedBox(width: 10,),
-                              Expanded(child: TextField(
-                                style: TextStyle(color: Colors.white),
-                                decoration: InputDecoration(
-                                  enabledBorder: UnderlineInputBorder(
-                                    borderSide:
-                                        BorderSide(color: Colors.white),
+                              ),
+                              SizedBox(width: 10,),
+                              Expanded(
+                                child: TextField(
+                                  style: TextStyle(color: Colors.white),
+                                  cursorColor: Colors.white,
+                                  decoration: InputDecoration(
+                                    isDense: true,
+                                    enabledBorder: UnderlineInputBorder(
+                                      borderSide: BorderSide(color: Colors.white),
+                                    ),
+                                    focusedBorder: UnderlineInputBorder( 
+                                      borderSide: BorderSide(color: Colors.white),
+                                    ),
                                   ),
                                 ),
-                          ),
                               )
                             ],
                           ),
@@ -123,26 +133,32 @@ class TelaPix extends StatelessWidget {
                       ),
                     ),
 
-                  SizedBox(width: 10),
+                  SizedBox(width: 20),
 
                   Expanded(
                     child: Container(
-                      padding: const EdgeInsets.all(20),
+                      height: 96,
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 30,
+                        vertical: 20
+                      ),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(40),
-                        color: const Color.fromARGB(137, 18, 112, 81)
+                        color: const Color.fromARGB(107, 24, 130, 95)
                       ),
-                      child: const Column(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Seu saldo",
-                            style: TextStyle(color: Colors.black),
+                            'Seu saldo',
                           ),
+                          SizedBox(height: 5,),                          
                           Text(
-                            "R\$ 76,08",
+                            'R\$ 76,08',
                             style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
+                              fontWeight: FontWeight.w900,
+                              fontSize: 20
                             ),
                           ),
                         ],
@@ -152,21 +168,17 @@ class TelaPix extends StatelessWidget {
                 ],
               ),
 
-              SizedBox(height: 20),
+              SizedBox(height: 60),
 
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
                   style: TextButton.styleFrom(
-                    backgroundColor:
-                        const Color.fromARGB(255, 116, 116, 116),
-                    minimumSize: const Size(80, 55),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
-                    ),
+                    backgroundColor: Colors.black,
+                    minimumSize: const Size(80, 60),
                   ),
                   onPressed: () {},
-                  child: const Icon(
+                  child: Icon(
                     Icons.arrow_forward,
                     color: Colors.white,
                   ),
@@ -176,41 +188,51 @@ class TelaPix extends StatelessWidget {
               SizedBox(height: 80),
 
               Center(
-                child: Container(
-                width: 350,
-                height: 350,
-                padding: const EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(50),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: const Offset(0, 0),
-                    )
-                  ],
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Image.asset(
-                      "../images/qr_code.png",
-                      width: 200,
-                      ),
-                    Text(
-                      "Ler QR Code",
-                      style: TextStyle(
-                        color: Color(0xFF0F7A4D),
-                        fontWeight: FontWeight.bold,
-                      ),
-                    )
-                  ],
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero, // remove padding
+                    splashFactory: NoSplash.splashFactory, 
+                    overlayColor: Colors.transparent, // remove hover/cor ao clicar
+                  ),
+                  onPressed: () {},
+                  child: Container(
+                    width: 350,
+                    height: 400,
+                    padding: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(50),
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color.fromARGB(86, 158, 158, 158),
+                          spreadRadius: 5,
+                          blurRadius: 7,
+                          offset: const Offset(0, 0),  // (x,y)
+                        )
+                      ],
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Image.asset(
+                          '../images/qr_code.png',
+                          width: 250,
+                        ),
+                        Text(
+                          'Ler QR Code',
+                          style: TextStyle(
+                            color: Color(0xFF0F7A4D),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
-              )
-              
+
+              SizedBox(height: 40)
             ],
           ),
         ),

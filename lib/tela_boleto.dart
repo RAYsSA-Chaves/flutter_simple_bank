@@ -5,6 +5,6 @@ class TelaBoleto extends StatelessWidget {
 
 @override
     Widget build(BuildContext context) {
-      return Text("boleto");
+      return Text('boleto');
   }
 }
